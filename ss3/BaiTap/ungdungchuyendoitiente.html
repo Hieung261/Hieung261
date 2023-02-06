@@ -5,8 +5,8 @@
     <title>Chuyển đổi tiền tệ</title>
 </head>
 <body>
-<div class="box" >
-    <p style="text-align: center;">ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</p>
+<div class="box">
+    <p> ỨNG DỤNG CHUYỂN ĐỔI TIỀN TỆ</p>
     <span>Số lượng</span><br>
     <input type="text" id="input" placeholder="1">
     <br>
@@ -26,7 +26,8 @@
     <br> <br>
     <td>
         <button type="button" onclick="chuyen()" style="background-color: red ;color: #FFFFFF">
-            Chuyển đổi </button>
+            Chuyển đổi
+        </button>
     </td>
     <br>
 </div>
@@ -35,7 +36,7 @@
     function chuyen() {
         Tien = document.getElementById("input").value;
         var result = Tien / 23000;
-        document.getElementById("result").innerHTML="Result : "+result+"USD";
+        document.getElementById("result").innerHTML = "Result : " + result + "USD";
     }
 </script>
 <tr>
