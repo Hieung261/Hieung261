@@ -6,17 +6,18 @@
 </head>
 <body>
 <script>
-    let diem = +prompt("nhap so diem cua ban")
-    if (diem > 8) {
-        document.write("hoc sinh gioi")
-        if (diem < 8 && diem > 6.5) {
-            document.write("hoc sinh kha")
-            if (diem > 5 && diem < 6.5) {
-                document.write("hoc sinh trung binh")
-            } else {
-                document.write("hoc sinh yeu")
-            }
-        }
+    let kiemTra = +prompt("Nhập Điểm Kiểm Tra : ");
+    let giuaKi = +prompt("Nhập Điểm Giữa Kì : ");
+    let cuoiKi = +prompt("Nhập Điểm Cuối Kì : ");
+    let tongDiem = (kiemTra + giuaKi * 2 + cuoiKi * 3) / 6;
+    if (tongDiem < 5) {
+        document.write("Bạn Là Học Sinh Yếu");
+    } else if (tongDiem < 6.5) {
+        document.write("Bạn Là Học Sinh Trung Bình");
+    } else if (tongDiem < 8) {
+        document.write("Bạn Là Học Sinh Khá");
+    } else {
+        document.write("Bạn Là Học Sinh Giỏi");
     }
 </script>
 </body>
