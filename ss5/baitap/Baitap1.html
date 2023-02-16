@@ -5,11 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<!--Sử dụng vòng lặp để đếm từ 1 đến 100. Khi số là 99, hiển thị hộp thoại thông báo là đã hoàn thành.-->
 <script>
-    for (let i = 0; i < 101; i++) {
-        document.write(i + '<br>')
+    let n =+ prompt("Nhập số bất kì: ")
+    for(var i=0; i<n; i++){
+        document.write(" Số: " + i + "<br>");
+        if (i===99){
+            document.write("Hoàn thành")
+        }
     }
 </script>
+
 </body>
 </html>
