@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m =+prompt("Nhập số tiền gốc : ");
+    let r = 3/100;
+    let n =+prompt("Nhập số tháng vay : ");
+    let T;
+    for (n=0;n<=m;n++){
+        T=(((m*r)/12)*n);
+    }
+    document.write("Tiền lãi là : "+T+"đ");
+</script>
+</body>
+</html>
